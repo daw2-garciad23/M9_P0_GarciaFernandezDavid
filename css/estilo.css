@@ -1,0 +1,164 @@
+.flex-container{
+    display: flex;/*crea elemento flexible*/
+}
+body{
+    font-size: 20px;/*tamaño de letra*/
+}
+h2{
+    color: #3d4449;/*color de texto*/
+    font-family: "Roboto Slab", serif;/*tipo de fuente*/
+    font-weight: 700;
+        line-height: 1.5;
+        font-size: 1.38889em;
+        border-bottom: solid 3px #f56a6a;/*color del borde inferior*/
+}
+.items{
+    font-size: 0.9em;/*tamaño de la letra*/
+        letter-spacing: 0.075em;/*espacio entre letras*/
+        border-top: solid 1px rgba(210,215,217,0.75);/*estilo del borde superior*/
+}
+.fondomenu{
+    background-color: #f5f6f7;/*color de fondo del menu*/
+}
+ol, ul {
+    list-style: none; /*eliminar el estilo de lista*/
+}
+.header{
+    padding-top: 6.5em;/*espaciado desde la àrte superior*/ 
+    border-bottom: solid 3px #f56a6a;/*color del borde inferior*/
+    display: inline-block;/*coloca los elementos en linea*/
+    margin: 0 0 2em 0;/*margen de la pagina*/
+    padding: 0 0.75em 0.5em 0; /*espaciado de la pagina*/
+}
+.logo{
+      font-size: 1.25em;/*tamaño de la letra*/
+      margin: 0; /*margen en la pagina*/
+}
+.icons{
+      height: 5em;/*altura del elemento*/
+      line-height: 5em;
+      position: absolute;/*posicion del icono*/
+      right: -0.5em;/*posicion respecto a la derecha*/
+      top: 0;/*posicion respecto a la parte superior*/
+      display:flex; /*crea elemento flexible*/
+} 
+.label{
+    display: none; /*elimina el estilo del display*/
+}
+h1{
+    font-size: 4em;/*tamaño de la letra*/
+    margin: 0 0 0.5em 0;/*margen en la pagina*/
+    line-height: 1.3;
+    color: #3d4449;/*color de la letra*/
+    font-family: "Roboto Slab", serif;/*tipografia de la letra*/
+}
+p{
+    margin: 0 0 2em 0;/*margen del parrafo*/
+    display: block;/*hace que se situe el elemento en bloque*/
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font: inherit;
+    padding: 0;
+    border: 0;
+}
+.image{
+    display: block;/*hace que se situe el elemento en bloque*/
+    margin: 0 0 2em 4em;/*margen del elemento*/
+    width: 50%;/*tamaño que ocupa el elemento*/
+    
+}
+.button{
+    background-color: transparent;/*color de fondo transparente*/
+    border-radius: 0.375em;
+    border: 0;/*sin borde*/
+    box-shadow: inset 0 0 0 2px #f56a6a;/*sombra del elemento*/
+    color: #f56a6a;/*color de la letra*/
+    cursor: pointer;/*tipo de cursor*/
+    display: inline-block;/*coloca los elementos en linea*/
+    font-family: "Roboto Slab", serif;/*tipografia de la letra*/
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 3.5em;/*altura*/
+    letter-spacing: 0.075em;/*espacio entre las letras*/
+    line-height: 3.5em;/*altura de las lineas*/
+    padding: 0 2.25em;/*espaciado del elemento*/
+    text-align: center;/*alineacion del texto centrada*/
+    text-decoration: none;/*sin decoracion predeterminada*/
+}
+a{
+    color:black;/*color de las letras en negro*/
+    text-decoration: none;
+}
+
+.solid{
+    color:rgb(245, 106, 106);/*color de los iconos en rojo*/
+    height: 6em;/*altura de los iconos*/
+    margin: 0em 0px 0px 0em;/*margen de los iconos*/
+    width: 6em;/*ancho de los iconos*/
+    position: relative;/*posicion relativa*/
+    top: 0.05em;
+    
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;/*estilo wrap en los elementos*/
+    margin: 0px 0px 2em -3em;
+    width: calc(100% + 3em);/*ancho de los elementos*/
+}
+article{
+    display: flex;
+    width: 50%;/*ancho del articulo*/
+    height: 50%;/*altura del articulo*/
+}
+
+.romboin{
+    margin:0 1em 0 1em;/*margen del elemento*/
+    float: left;/*coloca los elementos a la izquierda*/
+}
+.posts article .image {
+    display: block;
+    margin: 0 0 2em 0;
+}
+.posts{
+    flex-wrap: wrap;
+    display: flex;
+    width: calc(100% + 6em);
+}
+article{
+    display: block;/*coloca los elementos en bloque*/
+}
+.posts article:before {
+    background: rgba(210, 215, 217, 0.75);/*color del fondo*/
+    content: '';
+    display: block;
+    height: calc(100% + 6em);/*altura del elemento*/
+    left: -3em;
+    position: absolute;/*posicion del elemento*/
+    top: 0;/*altura del elemento*/
+    width: 1px;/*ancho del elemento*/
+}
+.disflex{
+    display: flex;
+}
+body{
+    padding:30px 10px 30px 10px;
+    margin:10px 10px 10px 10px;
+}
+.features article .icon:after {
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 0.25rem;
+    border: solid 2px rgba(210, 215, 217, 0.75);
+    content: '';
+    display: block;
+    height: 7em;
+    left: 50%;
+    margin: -3.5em 0 0 -3.5em;
+    position: absolute;
+    top: 50%;
+    width: 7em;
+}
